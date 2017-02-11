@@ -6,11 +6,6 @@ public class test {
 		// TODO Auto-generated method stub
 		
 		Noeud n =new Noeud();
-		
-		String r = n.rechercherMot("un chat et un chien", "un");
-		
-		System.out.println(r);
-		
 		LireTexte lf = new LireTexte("texte.rtf");
 		ArrayList<String> l = lf.lire();
 		

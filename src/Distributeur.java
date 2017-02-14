@@ -13,7 +13,7 @@ public class Distributeur implements ServiceDistributeur{
 	public ArrayList<String> lireText(ArrayList<String> ls, String m) throws RemoteException {
 		// TODO Auto-generated method stub
 		ArrayList<String> lres = new ArrayList<String>();
-		String sr="Noeuds inéxistants";
+		String sr="Noeuds inexistants";
 		if(this.noeuds.size()>0){
 			int i=0;
 			int x=0;
@@ -34,7 +34,7 @@ public class Distributeur implements ServiceDistributeur{
 		}
 
 		if(lres.size()==0){
-			lres.add("mot recherché introuvable...");
+			lres.add("mot recherche introuvable...");
 		}
 
 		return lres;
@@ -46,7 +46,7 @@ public class Distributeur implements ServiceDistributeur{
 		this.noeuds.add(ibc);	
 
 		String host = RemoteServer.getClientHost();
-		System.out.println("Noeud "+host+" enregistré");
+		System.out.println("Noeud "+host+" enregistre");
 
 	}
 

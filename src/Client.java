@@ -10,10 +10,9 @@ import java.util.ArrayList;
 public class Client {
 
 	public static void main(String[] args) throws RemoteException, NotBoundException {
-		// TODO Auto-generated method stub
-		/* adresse du serveur de calcul depuis la ligne de commande */ 
-		String serveur="localhost"; // par défaut le serveur est sur la même machine
-		int port=1099; // le port de la rmiregistry part défaut 
+		
+		String serveur="localhost"; 
+		int port=1099;  
 		if(args.length > 2)
 			serveur=args[3];
 		
